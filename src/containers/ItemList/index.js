@@ -19,19 +19,19 @@ class ItemList extends Component {
     <Item key= {i}
           quantity = {item.quantity}
           name = {item.name}
-          price = {(0.15 * parseFloat((item.price * item.quantity)) + parseFloat(item.price * item.quantity)).toFixed(2)}
+          price = {((Math.ceil((0.15 * parseFloat((item.price * item.quantity)))*20)/20) + parseFloat(item.price * item.quantity)).toFixed(2)}
           imported = "imported" />  :
       item.checked ?
       <Item key= {i}
             quantity = {item.quantity}
             name = {item.name}
-            price = {(0.05 * parseFloat((item.price * item.quantity)) + parseFloat(item.price * item.quantity)).toFixed(2)}
+            price = {((Math.ceil((0.05 * parseFloat((item.price * item.quantity)))*20)/20) + parseFloat(item.price * item.quantity)).toFixed(2)}
             imported = "imported" /> :
       !item.exempt ?
       <Item key= {i}
             quantity = {item.quantity}
             name = {item.name}
-            price = {(0.1 * parseFloat((item.price * item.quantity)) + parseFloat(item.price * item.quantity)).toFixed(2)}
+            price = {((Math.ceil((0.1 * parseFloat((item.price * item.quantity)))*20)/20) + parseFloat(item.price * item.quantity)).toFixed(2)}
             imported = "" />  :
         <Item key= {i}
             quantity = {item.quantity}
