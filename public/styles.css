@@ -1,0 +1,33 @@
+.input-group{
+  position: relative;
+  display: table;
+  border-collapse: separate;
+  margin: 20px auto;
+}
+
+.item-list{
+  text-align: center;
+}
+
+.result {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.product-input{
+  height: 30px;
+  width: 90%;
+  margin-left: -1px;
+}
+
+.name{
+  vertical-align: top;
+}
+
+.btn-toolbar {
+    display: inline-block;
+}
+
+.inline{
+  display: inline-block;
+}

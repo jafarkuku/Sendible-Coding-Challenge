@@ -6,7 +6,7 @@ server.set('view engine', 'ejs') //set the template egine to ejs
 
 server.get('/', (req, res) => {
   res.render('index', {
-    content : "Hello Express, I'm <h2>EJS!</h2>"
+    content : "..."
   });
 }); //setting the index route
 
