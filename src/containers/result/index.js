@@ -11,9 +11,9 @@ class Result extends Component{
     return (
       <div className="result">
         <h4>Sales Tax</h4>
-        <span>{(totalTaxSelector(this.props.items.items)).toFixed(2)}</span>
+        <span>£{(totalTaxSelector(this.props.items.items)).toFixed(2)}</span>
         <h4>Total</h4>
-        <span>{(totalSelector(this.props.items.items)).toFixed(2)}</span>
+        <span>£{(totalSelector(this.props.items.items)).toFixed(2)}</span>
       </div>
     );
   }
